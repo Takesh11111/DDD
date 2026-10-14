@@ -1,0 +1,19 @@
+
+login = "Admin"
+password = "12345"
+
+attemtps = 3
+
+while attemtps > 0:
+    user_login = input("Введите логин: ")
+    user_password = input("Введите пароль: ")
+    if user_login == login and user_password == password:
+        print('Добро пожаловать')
+    else:
+        attemtps -= 1
+        print('Неверный логин или пароль!')
+
+    if attemtps > 0:
+        print('У вас осталось попыток:', attemtps)
+    else:
+        print('Аккаунт заблокирован')
